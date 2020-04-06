@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="BASE_URL">"https://developers.themoviedb.org/3/movies"</string>
+
+</resources>

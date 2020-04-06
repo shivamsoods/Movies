@@ -8,11 +8,11 @@ import org.koin.dsl.module
 import retrofit2.Retrofit
 
 val mainModule = module {
-    factory { providePostService(get()) }
+    factory { provideMoviesService(get()) }
     single { MainRepository(get()) }
 
     viewModel { MainViewModel(get()) }
 }
 
-private fun providePostService(retrofit: Retrofit) =
+private fun provideMoviesService(retrofit: Retrofit) =
     retrofit.create(MovieService::class.java)

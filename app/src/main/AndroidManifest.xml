@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shivam.movies">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".Movies"
         android:allowBackup="true"
